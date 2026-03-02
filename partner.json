@@ -1,0 +1,15 @@
+{
+  "name": "AI Sidebar with DeepSeek AI",
+  "title": "AI Sidebar with DeepSeek AI (Powered by aitopia.ai)",
+  "search_title": "AI Sidebar with DeepSeek AI",
+  "logo": "/logo.svg",
+  "logo_full": "/logo_full.svg",
+  "main_color": "#0066FF",
+  "main_color_dark": "#0066FF",
+  "description": "Chat with DeepSeek AI – Boost your creativity and productivity using deepseek, the ultimate AI-powered browser tool.",
+  "store_url": "https://chromewebstore.google.com/detail/deepseek-ai/inhcgfpbfdjbjogdfjbclgolkmhnooop",
+  "context": false,
+  "install": true,
+  "uninstall": false,
+  "ai_default_model": "DeepSeek R1"
+}

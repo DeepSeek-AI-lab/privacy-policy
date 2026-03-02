@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DeepSeek Rating Popup" />
+    <link rel="stylesheet" href="Helper/bluePopup.css" />
+    <script type="module" src="Helper/bluePopup.js" defer></script>
+  </head>
+  <body>
+  <div id="wrp">
+    <main class="popup-container" id="popup-container" >
+    
+        <button
+          type="button"
+          class="closeBtn"
+          id="closeButton"
+          aria-label="Close popup"
+        >
+          <img src="close.svg" alt="Close" width="12" height="12" />
+        </button>
+        <h1 class="title">Do you enjoy DeepSeek?</h1>
+        <div class="starsContainer" role="img" aria-label="Five star rating">
+          <img src="star.svg" alt="" class="starIcon" width="14" height="14" />
+          <img src="star.svg" alt="" class="starIcon" width="14" height="14" />
+          <img src="star.svg" alt="" class="starIcon" width="14" height="14" />
+          <img src="star.svg" alt="" class="starIcon" width="14" height="14" />
+          <img src="star.svg" alt="" class="starIcon" width="14" height="14" />
+        </div>
+
+    
+<div style="width: 100%;display: flex; flex-direction: row;">
+        <button type="button" class="rateUsBtn" id="rateUsButton">
+          Rate it
+        </button>
+            <div class="setting_p">
+          <img
+            src="./Helper/setting.png"
+            class="settingImg"
+            alt="setting"
+            title="setting"
+            id="settingImg"
+          />
+        </div>
+        </div>
+        <div class="footer-links"></div>
+      </div>
+ 
+
+    </main>
+         <div id="togglebox" class="togglebox hide">
+     <img src="./Helper/backIcon.png" id="backIcon" alt="">
+        <div class="togglew">
+                 <span>AI Sidebar Insights</span>  
+          <div class="toggle connect_button" id="togglep">
+            <input type="radio" name="active_proxy" id="switchToggle"  />
+            <label for="toggle1" class="switch"  ></label>
+          </div>
+        </div>
+
+              </div>
+  </body>
+</html>
