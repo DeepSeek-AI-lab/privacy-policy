@@ -58,128 +58,182 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated"><strong>Last Updated:</strong> June 4, 2026</p>
+    <p class="last-updated"><strong>Last Updated:</strong> June 17, 2026</p>
 
     <div class="section">
-        <h2>1. Overview</h2>
-        <p><strong>Extension:</strong> AI Sidebar with DeepSeek AI (ID: inhcgfpbfdjbjogdfjbclgolkmhnooop)<br>
-        <strong>Developer:</strong> Extchange.com<br>
-        <strong>Technology Partner:</strong> Aitopia.ai</p>
+        <h2>1. Who We Are</h2>
+        <p><strong>Extension:</strong> AI Sidebar with Deepseek, ChatGPT, Claude and more (ID: inhcgfpbfdjbjogdfjbclgolkmhnooop)<br>
+        <strong>Developer / data controller:</strong> Extchange.com<br>
+        <strong>Technology partner (processor):</strong> Aitopia (aitopia.ai)<br>
+        <strong>Privacy contact:</strong> <a href="mailto:info@extchange.com">info@extchange.com</a></p>
 
-        <p>This extension provides AI chat functionality through DeepSeek AI. Your data handling depends on which features you use.</p>
+        <p>This extension adds an AI chat sidebar to your browser. It lets you send prompts to
+        third-party AI providers (such as DeepSeek, OpenAI's ChatGPT, Anthropic's Claude and other
+        models offered in the sidebar) and shows their replies. This policy describes, comprehensively,
+        what data the extension collects, how it is used, how and where it is stored, and every party
+        it is shared with. No category of processing is omitted.</p>
     </div>
 
     <div class="section">
-        <h2>2. What Data We Collect</h2>
+        <h2>2. Data We Collect and Process</h2>
 
-        <h3>Local Storage Only (Never Transmitted)</h3>
+        <h3>2.1 Stored locally on your device (via chrome.storage / localStorage)</h3>
+        <p>This data stays on your device and is not transmitted to the developer:</p>
         <ul>
-            <li><strong>Settings:</strong> Extension preferences (sidebar position, theme, AI model selection)</li>
-            <li><strong>Screen dimensions:</strong> Used only to position popup windows (not stored)</li>
+            <li><strong>Preferences and settings</strong> — e.g. selected AI model, sidebar/theme options.</li>
+            <li><strong>A local identifier</strong> — a random UUID ("chatId") generated on your device to namespace local data. It is not based on your identity and is not sent to the developer.</li>
+            <li><strong>A feature flag</strong> ("chatFlag") and your acknowledgement of the first-run notice ("aiinhbfoop_user_consent").</li>
+            <li><strong>Authentication data</strong> — if you sign in to the sidebar's AI service, authentication tokens and basic profile data (e.g. an account token and the account "user" object, which may include your email/username) are cached locally so you stay signed in across sites. This data originates from the technology partner (aitopia) when you log in.</li>
         </ul>
 
-        <h3>DeepSeek AI Processing</h3>
-        <p>When you use AI chat features, DeepSeek AI processes:</p>
+        <h3>2.2 Data you submit to the AI (sent to third parties to provide the service)</h3>
+        <p>When you use the AI features, the following is transmitted, through our technology partner
+        (aitopia) and on to the AI provider you have selected, in order to generate a response:</p>
         <ul>
-            <li>Chat messages, files, and conversation history</li>
-            <li>Account info (if you create an account): email, username, date of birth</li>
-            <li>Technical data: IP address, browser type, device info</li>
+            <li>The messages, prompts, and any text or files you choose to submit to the AI.</li>
+            <li>Conversation history within a session, so the AI can produce relevant replies.</li>
+            <li>Account/authentication data needed to use the service (if you are signed in).</li>
+            <li>Technical connection data that the receiving services collect by necessity (e.g. IP address, browser and device information). This is processed by those services, not by the developer.</li>
         </ul>
-        <p>See <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">DeepSeek's Privacy Policy</a> for details.</p>
+        <p>Page content is only processed when you actively select or submit it to the AI. The extension
+        does <strong>not</strong> automatically read, collect, or transmit the content of the pages you
+        visit or your browsing history (see Section 5).</p>
 
-        <h3>Aitopia.ai (Technology Partner)</h3>
-        <p>May process extension usage patterns, technical data, and user content. See <a href="https://aitopia.ai/privacy-policy" target="_blank">Aitopia's Privacy Policy</a>.</p>
+        <h3>2.3 Screen dimensions</h3>
+        <p>Read at the moment a popup is opened, solely to center the window. Not stored and not transmitted.</p>
     </div>
 
     <div class="section">
         <h2>3. How We Use Data</h2>
         <ul>
-            <li><strong>Extension functionality:</strong> Provide AI sidebar, remember preferences, position windows</li>
-            <li><strong>Service delivery:</strong> Connect you to DeepSeek AI and backend services</li>
+            <li><strong>Deliver the AI features</strong> — send your prompts to the selected AI provider and return the reply.</li>
+            <li><strong>Authenticate you</strong> — keep you signed in to the sidebar's AI service across websites.</li>
+            <li><strong>Remember your preferences</strong> — apply your settings locally.</li>
+            <li><strong>Display the interface correctly</strong> — e.g. position popup windows.</li>
         </ul>
+        <p>We do not use your data for advertising, profiling, or analytics, and we do not sell it.</p>
     </div>
 
     <div class="section">
-        <h2>4. Data Sharing</h2>
-
-        <h3>External Services We Connect To:</h3>
+        <h2>4. How and With Whom Data Is Shared</h2>
+        <p>Your data is shared only with the following parties, and only to deliver the service you request:</p>
         <ul>
-            <li><strong>DeepSeek AI</strong> - AI chat service</li>
-            <li><strong>Aitopia.ai</strong> - Extension backend services</li>
+            <li><strong>Aitopia (aitopia.ai)</strong> — our technology partner and backend processor. It powers
+            the sidebar, stores your authentication, and routes your prompts to the AI provider you choose.
+            This includes its service domains (e.g. api.aitopia.ai, cdn.aitopia.ai) and the related domain
+            chatgptextension.ai operated by the same provider. See
+            <a href="https://aitopia.ai/privacy-policy" target="_blank">Aitopia's Privacy Policy</a>.</li>
+            <li><strong>The AI provider(s) you choose</strong> — the prompts you submit are sent to the model
+            you select in the sidebar. Depending on your choice this may be:
+                <ul>
+                    <li><strong>DeepSeek</strong> — see <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">DeepSeek's Privacy Policy</a>.</li>
+                    <li><strong>OpenAI (ChatGPT)</strong> — see <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI's Privacy Policy</a>.</li>
+                    <li><strong>Anthropic (Claude)</strong> — see <a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic's Privacy Policy</a>.</li>
+                    <li>Other AI models offered in the sidebar, each governed by its own provider's privacy policy.</li>
+                </ul>
+            </li>
         </ul>
+        <p>We do not share your data with any other party, including advertisers, data brokers, or analytics providers.</p>
+    </div>
 
-        <p><strong>We do NOT:</strong></p>
+    <div class="section">
+        <h2>5. What We Do NOT Do</h2>
         <ul>
-            <li>Track browsing history</li>
-            <li>Read page content</li>
-            <li>Send any usage analytics to third parties</li>
-            <li>Sell your data to third parties</li>
+            <li>We do <strong>not</strong> track your browsing history or the list of sites you visit.</li>
+            <li>We do <strong>not</strong> automatically read or transmit page content; only content you actively submit to the AI is processed.</li>
+            <li>We do <strong>not</strong> collect or send usage analytics or telemetry. (A previous version of the extension contained URL-tracking code; it has been fully removed.)</li>
+            <li>We do <strong>not</strong> sell your personal data, and we do <strong>not</strong> use it for advertising.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>5. Your Privacy Controls</h2>
-
-        <h3>URL Tracking:</h3>
-        <p>Already disabled at the code level — no further action required.</p>
-
-        <h3>Stop DeepSeek Data Collection:</h3>
-        <p>Don't use the AI chat features, or manage your data through DeepSeek's platform</p>
-
-        <h3>Delete All Extension Data:</h3>
-        <p>Uninstall the extension or clear data through Chrome settings</p>
-    </div>
-
-    <div class="section">
-        <h2>6. Data Retention</h2>
+        <h2>6. Where Data Is Stored and How Long</h2>
         <ul>
-            <li><strong>Local data:</strong> Stays on your device until you uninstall or clear extension data</li>
-            <li><strong>DeepSeek data:</strong> Retained per their privacy policy</li>
+            <li><strong>Local data</strong> (Section 2.1): stored on your device and retained until you clear the extension's data or uninstall it.</li>
+            <li><strong>Data processed by third parties</strong> (Sections 2.2 and 4): stored and retained by aitopia and the relevant AI provider according to their own privacy policies and retention periods.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>7. Extension Permissions Explained</h2>
+        <h2>7. Chrome Web Store Limited Use Disclosure</h2>
+        <p>Our use of information received from Google APIs, and of all user data, adheres to the
+        <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use/" target="_blank">Chrome Web Store User Data Policy</a>,
+        including the Limited Use requirements. Specifically:</p>
         <ul>
-            <li><strong>Storage:</strong> Save your preferences locally</li>
-            <li><strong>System Display:</strong> Get screen size to center popup windows</li>
-            <li><strong>Tabs:</strong> Declared in the manifest but no longer used for tracking (the tab listeners have been removed)</li>
-            <li><strong>Content Scripts (All URLs):</strong> Inject AI sidebar when you activate it</li>
+            <li>We only collect and use user data for the purposes described in this policy.</li>
+            <li>We do not sell user data, and we do not transfer it to third parties except as required to provide and improve the user-facing features described here (i.e. to the AI provider you choose and our technology partner).</li>
+            <li>We do not use user data for advertising, creditworthiness, or any unrelated purpose.</li>
+            <li>We do not allow humans to read user data unless: you give consent, it is necessary for security or to comply with applicable law, or the data is aggregated/anonymized and used for internal operations.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>8. Legal & Compliance</h2>
-
-        <h3>GDPR (If Applicable)</h3>
-        <p>Legal basis: Consent (by installing), Legitimate Interest (core functionality), Contract Performance (AI service)</p>
-
-        <h3>Children's Privacy</h3>
-        <p>Not intended for users under 13. We don't knowingly collect children's data.</p>
-
-        <h3>International Transfers</h3>
-        <p>Data may be transmitted to DeepSeek AI's global servers. By using this extension, you consent to DeepSeek's data handling practices.</p>
+        <h2>8. Extension Permissions and Why They Are Needed</h2>
+        <ul>
+            <li><strong>storage / unlimitedStorage:</strong> save your preferences and authentication locally.</li>
+            <li><strong>system.display:</strong> read screen size to center popup windows.</li>
+            <li><strong>tabs:</strong> used to open and position the chat window and to notify open tabs when you activate the sidebar. It is not used to track browsing history.</li>
+            <li><strong>notifications:</strong> show occasional status messages from the extension.</li>
+            <li><strong>Host access (all URLs):</strong> inject the AI sidebar on the page so you can use it from any website.</li>
+        </ul>
     </div>
 
     <div class="section">
-        <h2>9. Contact & Resources</h2>
-
-        <p><strong>Extension Developer:</strong> <a href="https://chromewebstore.google.com/detail/deepseek-ai/inhcgfpbfdjbjogdfjbclgolkmhnooop" target="_blank">Chrome Web Store Page</a></p>
-        <p><strong>Technology Partner:</strong> <a href="https://aitopia.ai/privacy-policy" target="_blank">Aitopia Privacy Policy</a></p>
-        <p><strong>AI Service:</strong> <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank">DeepSeek Privacy Policy</a></p>
+        <h2>9. Your Rights and Choices</h2>
+        <p>Depending on your location (e.g. under the GDPR or CCPA), you may have the right to access,
+        correct, delete, or port your personal data, to object to or restrict processing, and to lodge a
+        complaint with a supervisory authority.</p>
+        <ul>
+            <li><strong>Stop AI processing:</strong> do not submit prompts, or remove the extension.</li>
+            <li><strong>Delete local data:</strong> clear the extension's data in your browser or uninstall it.</li>
+            <li><strong>Exercise rights held by third parties:</strong> contact aitopia and the relevant AI provider for data they hold (see Section 4).</li>
+            <li><strong>Requests to us:</strong> contact us at the address in Section 1.</li>
+        </ul>
     </div>
 
     <div class="section">
-        <h2>10. Policy Updates</h2>
-        <p>We may update this policy. Changes reflected by updating the "Last Updated" date. Continued use after changes means you accept the updated policy.</p>
+        <h2>10. Legal Bases (GDPR)</h2>
+        <ul>
+            <li><strong>Performance of the service (Art. 6(1)(b)):</strong> processing your prompts to deliver the AI replies you request, and authenticating you.</li>
+            <li><strong>Legitimate interests (Art. 6(1)(f)):</strong> storing your preferences locally to make the extension usable.</li>
+        </ul>
+        <p>The first-run screen is an informational notice; the processing it describes is necessary to provide
+        the service, so it does not rely on consent. If we ever introduce non-essential processing, we will
+        request separate, opt-in consent (off by default) and disclose it here.</p>
+    </div>
+
+    <div class="section">
+        <h2>11. International Transfers</h2>
+        <p>Because aitopia and the AI providers operate globally, your data may be processed on servers
+        outside your country. Those transfers are governed by the respective providers' privacy policies
+        and safeguards.</p>
+    </div>
+
+    <div class="section">
+        <h2>12. Children's Privacy</h2>
+        <p>This extension is not intended for children under 13 (or the minimum age in your jurisdiction),
+        and we do not knowingly collect their personal data.</p>
+    </div>
+
+    <div class="section">
+        <h2>13. Changes to This Policy</h2>
+        <p>We may update this policy. Material changes will be reflected by updating the "Last Updated" date
+        above and, where appropriate, through an in-product notice.</p>
+    </div>
+
+    <div class="section">
+        <h2>14. Contact</h2>
+        <p><strong>Privacy contact:</strong> <a href="mailto:info@extchange.com">info@extchange.com</a><br>
+        <strong>Developer:</strong> Extchange.com<br>
+        <strong>Chrome Web Store listing:</strong> <a href="https://chromewebstore.google.com/detail/deepseek-ai/inhcgfpbfdjbjogdfjbclgolkmhnooop" target="_blank">View on the Web Store</a></p>
     </div>
 
     <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
 
     <p style="text-align: center; color: #666; font-size: 14px;">
-        <strong>AI Sidebar with DeepSeek AI</strong><br>
+        <strong>AI Sidebar with Deepseek, ChatGPT, Claude and more</strong><br>
         Developed by Extchange.com | Technology partner: aitopia.ai<br>
-        Last Updated: June 4, 2026
+        Last Updated: June 17, 2026
     </p>
 </body>
 </html>
